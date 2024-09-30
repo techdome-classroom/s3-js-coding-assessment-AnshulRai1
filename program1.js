@@ -22,8 +22,6 @@ var isValid = function(s) {
                 }
             }
         }
-        
-        // If the stack is empty, all opening brackets had matching closing brackets
         return stack.length===0;
     }
 
