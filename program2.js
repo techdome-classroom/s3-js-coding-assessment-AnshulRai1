@@ -14,8 +14,6 @@ var romanToInt = function(s) {
     };
     
     let total = 0;
-    
-    // Loop through each character of the string
     for (let i = 0; i < s.length; i++) {
         // Get the value of the current Roman numeral
         const currentVal = romanMap[s[i]];
