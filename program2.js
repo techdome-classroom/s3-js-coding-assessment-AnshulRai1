@@ -15,16 +15,12 @@ var romanToInt = function(s) {
     
     let total = 0;
     for (let i = 0; i < s.length; i++) {
-        // Get the value of the current Roman numeral
         const currentVal = romanMap[s[i]];
-        // Get the value of the next Roman numeral (if it exists)
         const nextVal = romanMap[s[i + 1]];
 
-        // If the current value is smaller than the next value, subtract it
         if (nextVal && currentVal < nextVal) {
             total -= currentVal;
         } else {
-            // Otherwise, add the current value
             total += currentVal;
         }
     }
