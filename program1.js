@@ -3,7 +3,6 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    function isValid(s) {
         // Stack to keep track of opening brackets
         let stack = [];
         
